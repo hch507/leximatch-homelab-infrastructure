@@ -28,7 +28,7 @@ VMware 기반으로 기업 사내 인프라 환경을 구축하고, 네트워크
 
 | **Hostname** | **Service**       | **IP Address**  | **Domain / Role**                       |
 | ------------ | ----------------- | --------------- | --------------------------------------- |
-| **GW01**     | Ubuntu / IPTables | `192.168.30.1`  | L3 Routing, NAT & Firewall Gateway      |
+| **GW01**     | Ubuntu / IPTables |        -        | L3 Routing, NAT & Firewall Gateway      |
 | **DNS01**    | BIND9             | `192.168.30.10` | `dns.momantle.internal` (Internal DNS)  |
 | **WEB01**    | Nginx             | `192.168.30.20` | `web.momantle.internal` (Reverse Proxy) |
 | **DB01**     | MySQL 8.0         | `192.168.30.30` | `db.momantle.internal` (Database)       |
@@ -49,19 +49,11 @@ VMware 기반으로 기업 사내 인프라 환경을 구축하고, 네트워크
 .
 ├── README.md
 ├── docs/                      # 상세 설계 및 검증 문서
-│   ├── 01-topology.md         # 전체 인프라 아키텍처 다이어그램
-│   ├── 02-network.md          # IP, Subnet, Routing & NAT 설계서
-│   ├── 03-access-policy.md    # IPTables ACL 접근 제어 정책서
-│   ├── 04-accounts.md         # OS 계정 및 최소 권한 관리 명세
-│   ├── 05-services.md         # DNS, WEB, WAS, DB 서비스 구축 명세
-│   ├── 06-test-results.md     # 망 간 통신 및 방화벽 검증 결과
-│   └── 07-troubleshooting.md  # 장애 유형별 분석 및 해결 기록
-├── config/                    # 인프라 서버 설정 원문 파일
-│   ├── gateway/               # Netplan, Kea DHCP, IPTables 룰셋
-│   ├── dns/                   # BIND9 named.conf 및 Zone 파일
-│   ├── web/                   # Nginx reverse proxy conf
-│   └── db/                    # MySQL my.cnf 및 계정 권한 스크립트
-└── scripts/                   # 자동화 및 검증 스크립트
+   ├── 01-topology.md         # 전체 인프라 아키텍처 다이어그램
+   ├── 02-network.md          # IP, Subnet, Routing & NAT 설계서
+   ├── 03-access-policy.md    # IPTables ACL 접근 제어 정책서
+   ├── 04-test-results.md     # 망 간 통신 및 방화벽 검증 결과
+   ├── 05-services.md         # DNS, WEB, WAS, DB 서비스 구축 명세
 ```
 
 ## Documentation Links
@@ -71,10 +63,9 @@ VMware 기반으로 기업 사내 인프라 환경을 구축하고, 네트워크
 | **01. Topology** | 네트워크 구조 및 구성도 | [문서 보기](docs/01-topology.md) |
 | **02. Network Design** | IP 구성, DHCP, 라우팅 및 NAT 명세 | [문서 보기](docs/02-network.md) |
 | **03. Access Policy** | IPTables 매트릭스 및 방화벽 룰셋 | [문서 보기](docs/03-access-policy.md) |
-| **04. Account & Permission** | Linux 계정 권한 및 Sudoers 정책 | [문서 보기](docs/04-accounts.md) |
-| **05. Services** | BIND9, Nginx, Spring Boot, MySQL 설정 | [문서 보기](docs/05-services.md) |
-| **06. Test Results** | 서비스 동작 및 방화벽 차단 검증 | [문서 보기](docs/06-test-results.md) |
-| **07. Troubleshooting** | 인프라 구축 중 발생한 장애 해결 기록 | [문서 보기](docs/07-troubleshooting.md) |
+| **04. Test Result** | 서비스 동작 및 방화벽 차단 검증 | [문서 보기](docs/06-test-results.md) |
+| **05. Service** | BIND9, Nginx, Spring Boot, MySQL 설정 | [문서 보기](docs/05-services.md) |
+
 
 ## Environment & Tech Stack
 
