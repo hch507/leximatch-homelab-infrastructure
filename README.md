@@ -28,7 +28,7 @@
 
 | **Hostname** | **Service**       | **IP Address**  | **Domain / Role**                       |
 | ------------ | ----------------- | --------------- | --------------------------------------- |
-| **GW01**     | Ubuntu / IPTables | 192.168.10.1<br>192.168.20.1<br>192.168.30.1<br>192.168.40.1 | L3 Routing, NAT & Firewall Gateway      |
+| **GW01**     | Ubuntu / IPTables | `192.168.10.1`<br>`192.168.20.1`<br>`192.168.30.1`<br>`192.168.40.1` | L3 Routing, NAT & Firewall Gateway      |
 | **DNS01**    | BIND9             | `192.168.30.10` | `dns.momantle.internal` (Internal DNS)  |
 | **WEB01**    | Nginx             | `192.168.30.20` | `web.momantle.internal` (Reverse Proxy) |
 | **DB01**     | MySQL 8.0         | `192.168.30.30` | `db.momantle.internal` (Database)       |
