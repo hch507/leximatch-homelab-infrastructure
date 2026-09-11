@@ -38,10 +38,10 @@ VMware 기반으로 기업 사내 인프라 환경을 구축하고, 네트워크
 ## Project Goals
 
 - **보안 망분리:** 4개 역할별 L2 브로드캐스트 도메인 격리 (직원/개발/서버/개발서버)
-- **중앙 라우팅 & NAT:** GW01 단일 접점을 통한 트래픽 라우팅 및 Outbound SNAT 통제
+- **중앙 라우팅 & NAT:** GW01 단일 접점을 통한 네트워크 간 트래픽 라우팅 및 Outbound SNAT 구성
 - **최소 권한 접근 제어:** IPTables 기반 망 간 Default Deny ACL 방화벽 정책 구현
-- **3-Tier 웹 서비스 연동:** Nginx - Spring Boot - MySQL 서비스 체인 및 BIND9 내부 DNS 구축
-- **체계적 문서화 & 검증:** 설정 파일 버전 관리 및 `tcpdump`, `nc` 기반 통신/차단 검증
+- **내부 인프라 서비스 구성:** Kea DHCP 및 BIND9 기반 내부 네트워크 서비스 구축
+- **체계적인 검증:** `ping`, `nslookup`, `curl`, `ssh`, `nc`, `tcpdump`를 활용한 통신 및 접근 차단 검증
 
 ## Repository Structure
 
