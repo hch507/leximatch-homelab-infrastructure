@@ -60,11 +60,11 @@ VMware 기반으로 기업 사내 인프라 환경을 구축하고, 네트워크
 
 | **문서 명세** | **설명** | **바로가기** |
 |---|---|---|
-| **01. Topology** | 네트워크 구조 및 구성도 | [문서 보기](docs/01-topology.md) |
-| **02. Network Design** | IP 구성, DHCP, 라우팅 및 NAT 명세 | [문서 보기](docs/02-network.md) |
-| **03. Access Policy** | IPTables 매트릭스 및 방화벽 룰셋 | [문서 보기](docs/03-access-policy.md) |
-| **04. Test Result** | 서비스 동작 및 방화벽 차단 검증 | [문서 보기](docs/06-test-results.md) |
-| **05. Service** | BIND9, Nginx, Spring Boot, MySQL 설정 | [문서 보기](docs/05-services.md) |
+| **01. Topology** | 네트워크 구조 및 구성도 | [문서 보기](docs/01.%20topology.png) |
+| **02. Network Design** | IP 구성, DHCP, 라우팅 및 NAT 명세 | [문서 보기](docs/02.%20network.md) |
+| **03. Access Policy** | IPTables 매트릭스 및 방화벽 룰셋 | [문서 보기](docs/03.%20access%20policy.md) |
+| **04. Test Result** | 서비스 동작 및 방화벽 차단 검증 | [문서 보기](docs/04.%20test%20result.md) |
+| **05. Service** | BIND9, Nginx, Spring Boot, MySQL 설정 | [문서 보기](docs/05.%20service.md) |
 
 
 ## Environment & Tech Stack
