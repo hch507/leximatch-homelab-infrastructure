@@ -1,6 +1,6 @@
 # LexiMatch Homelab Infrastructure
 
-VMware 기반으로 기업 사내 인프라 환경을 구축하고, 네트워크 망분리, 라우팅, 방화벽(ACL), DNS, 3-Tier Web Architecture(WEB/WAS/DB) 운영을 직접 설계하고 검증한 시스템 엔지니어링 홈랩 프로젝트입니다.
+기업 사내 인프라 환경을 가정하여 VMware 기반의 네트워크 및 서버 인프라를 구축했습니다. 네트워크 망분리, GW01을 통한 라우팅과 NAT, IPTables 기반 접근 제어, 내부 DNS 구성 및 서버별 네트워크 정책을 직접 설계하고 테스트했습니다.
 
 ---
 
